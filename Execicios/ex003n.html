@@ -1,0 +1,32 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+<body>
+    <section>
+        <h1>Qual o seu país de origem?</h1>
+        <input type="text" id="ppais">
+        <input type="button" value="pesquisar" onclick="pesquisar()">
+        <div id="resposta"></div>
+    </section>
+
+    <script>
+        var origem = "Brasil";
+        
+        function pesquisar() {
+            var 
+     = document.getElementById('ppais').value;
+            var resposta = document.getElementById('resposta');
+
+            if (pais.toUpperCase() === origem.toUpperCase()) {
+                resposta.innerHTML = 'Você é do Brasil';
+            } else {
+                resposta.innerHTML = 'Vou te catar = I did take you';
+            }
+        }
+    </script>
+</body>
+</html>

@@ -1,0 +1,48 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Simples usando JS</title>
+    <style>
+        *{
+            font-family: 'Gill Sans', 'Gill Sans MT', Calibri, 'Trebuchet MS', sans-serif;
+        }
+        div{
+            display: block;
+        }
+        section{
+            position: relative;
+            background-color: lightcoral;
+            margin: auto;
+            display: block;
+            width: 50vw;
+            text-align: center;
+            min-height: 40vh;
+            transform: translateY(25vh);
+            border-radius: 10px;
+            border: 1px solid black;
+        }
+    </style>
+</head>
+<body>
+    <section>
+        <h1>Radar</h1>
+        Velocidade do carro: <input type="number" id="velocidade">
+        <input type="button" value="go" onclick="go()">
+        <div id="resultado">resultado</div>
+    </section>
+</body>
+<script>
+    function go(){
+    var vel = window.document.querySelector('input#velocidade')
+    var res = window.document.querySelector('div#resultado')
+    var nvel = Number(vel.value)
+    resultado.innerHTML = `<p>Sua velocidade foi de ${nvel} km/h</p>`
+    if(nvel > 60){
+        resultado.innerHTML += `<p>Voce foi multado o limite da pista é de 60km/h</p>`
+    }
+    resultado.innerHTML += `<p>Use o cinto de segurança nos onibus</p>`
+    } 
+</script>
+</html>
