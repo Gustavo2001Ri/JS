@@ -10,6 +10,21 @@
         margin: 0px;
         padding: 0px;
         }
+        section{
+        background-color: lightblue;
+        border: 1px solid black;
+        width: 600px;
+        height: 400px;
+        margin: auto;
+        text-align: center;
+        border-radius: 5px;
+        padding: 20px;
+
+        }
+        img{
+            border-radius: 100%;
+            height: 200px;
+        }
     </style>
 </head>
 <body>
@@ -20,7 +35,7 @@
     </section>
 </body>
 <script>
-    hr = 14 
+    hr = 21
     if (hr < 12){
         turno = 'manhã '
         photo.innerHTML = "<img src='img/manhã.avif' alt='jorge'>"
@@ -31,6 +46,6 @@
         turno = 'noite'
         photo.innerHTML = "<img src='img/noite.jpg' alt='jorge'>"
     }
-    hora.innerHTML = `Agora são ${hr} da ${turno}`
+    hora.innerHTML = `Agora são ${hr}h da ${turno}`
 </script>
 </html>
