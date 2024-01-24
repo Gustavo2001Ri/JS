@@ -1,0 +1,36 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Horario do navegador</title>
+    <style>
+        *{
+        font-family: Arial, Helvetica, sans-serif;
+        margin: 0px;
+        padding: 0px;
+        }
+    </style>
+</head>
+<body>
+    <section>
+        <h1>Horario do dia</h1>
+        <div id="hora"></div>
+        <div id= "photo">
+    </section>
+</body>
+<script>
+    hr = 14 
+    if (hr < 12){
+        turno = 'manhã '
+        photo.innerHTML = "<img src='img/manhã.avif' alt='jorge'>"
+    }else if (hr < 18){
+        turno = 'tarde'
+        photo.innerHTML = "<img src='img/tarde.jpg' alt='jorge'>"
+    }else{
+        turno = 'noite'
+        photo.innerHTML = "<img src='img/noite.jpg' alt='jorge'>"
+    }
+    hora.innerHTML = `Agora são ${hr} da ${turno}`
+</script>
+</html>
